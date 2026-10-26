@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conference and Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+        }
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+        h2 {
+            color: darkblue;
+        }
+        .speaker {
+            background-color: lightyellow;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid gray;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+        }
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 12px;
+            border: none;
+        }
+        button:hover {
+            background-color: orange;
+        }
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechVision 2026</h1>
+        <h2>National Conference and Seminar</h2>
+        <p>Explore Technology, Innovation and Artificial Intelligence</p>
+        <p>Date:October 30, 2026</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#agenda">Schedule</a>
+        <a href="#venue">Venue</a>
+        <a href="#register">Register</a>
+        <a href="#guidelines">Guidelines</a>
+    </nav>
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>TechVision 2026 is a technical conference organized for students and technology enthusiasts.</p>
+        <p>Event Theme: Artificial Intelligence and Future Technology</p>
+        <p>Other Topics: Web Development, Machine Learning and Cybersecurity</p>
+        <p>Join us to learn new technologies and share innovative ideas.</p>
+    </section>
+    <section id="speakers">
+        <h2>Keynote Speakers</h2>
+        <div class="speaker">
+            <h3>Ms.Ramya</h3>
+            <p>Topic: Artificial Intelligence</p>
+            <p>Designation: AI Researcher</p>
+        </div>
+
+        <div class="speaker">
+            <h3>Mr. Uma Maheswara Rao</h3>
+            <p>Topic: Web Development</p>
+            <p>Designation: Software Developer</p>
+        </div>
+
+        <div class="speaker">
+            <h3>Ms.Venugopal</h3>
+            <p>Topic: Python programming</p>
+            <p>Designation: Python Developer</p>
+        </div>
+    </section>
+
+    <section id="agenda">
+        <h2>Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+                <th>Speaker</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Registration</td>
+                <td>Organizing Team</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Artificial Intelligence</td>
+                <td>Ms.Ramya</td>
+            </tr>
+            <tr>
+                <td>11:30 AM</td>
+                <td>Web Development</td>
+                <td>Mr.Uma Maheswara Rao</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Lunch Break</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Python programming</td>
+                <td>Ms.Venugopal</td>
+            </tr>
+            <tr>
+                <td>3:30 PM</td>
+                <td>Question and Answer Session</td>
+                <td>All Speakers</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="venue">
+        <h2>Venue Information</h2>
+        <p>Venue: Main Auditorium</p>
+        <p>College: ABC Engineering College</p>
+        <p>City: Vijayawada, Andhra Pradesh</p>
+        <p>Date: October 30, 2026</p>
+        <p>Time: 9:00 AM to 4:00 PM</p>
+    </section>
+
+    <section id="register">
+        <h2>Seminar Registration Form</h2>
+
+        <form>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Mobile Number:</label>
+            <input type="tel" placeholder="Enter your mobile number" required>
+
+            <label>College Name:</label>
+            <input type="text" placeholder="Enter your college name" required>
+
+            <label>Department:</label>
+            <select required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>AIML</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+
+            <label>Select Your Topic:</label>
+            <select required>
+                <option value="">Select Topic</option>
+                <option>Artificial Intelligence</option>
+                <option>Web Development</option>
+                <option>Machine Learning</option>
+                <option>Cybersecurity</option>
+            </select>
+
+            <label>Why do you want to attend?</label>
+            <textarea rows="4" placeholder="Enter your reason"></textarea>
+
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </section>
+
+    <section id="guidelines">
+        <h2>Participation Guidelines</h2>
+        <ul>
+            <li>Students must register before attending the event.</li>
+            <li>Participants should arrive at least 15 minutes early.</li>
+            <li>College identity cards must be carried.</li>
+            <li>Mobile phones should be kept silent during sessions.</li>
+            <li>Participants should maintain discipline.</li>
+            <li>Certificates will be provided according to event rules.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: techvision@example.com</p>
+        <p>TechVision 2026 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
