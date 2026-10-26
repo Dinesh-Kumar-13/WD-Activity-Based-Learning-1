@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Account Website</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        h1 {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Account Website</h1>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" minlength="8" required><br>
+        <button type="submit">Register</button>
+    </form>
+    <h2>Login Form</h2>
+    <form>
+        <label for="loginemail">Email:</label><br>
+        <input type="email" id="loginemail" required><br>
+        <label for="loginpassword">Password:</label><br>
+        <input type="password" id="loginpassword" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <h2>Password Recovery</h2>
+    <form>
+        <label for="recoveryemail">Enter Your Email:</label><br>
+        <input type="email" id="recoveryemail" required><br>
+        <button type="submit">Reset Password</button>
+    </form>
+    <h2>Profile Setup</h2>
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" required><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" required><br>
+        <label for="phone">Mobile Number:</label><br>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required><br>
+        <button type="submit">Save Profile</button>
+    </form>
+</body>
+</html>
